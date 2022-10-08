@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+html {
+	font-size: $base-font-size;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+	vertical-align: middle;
+}
+
+textarea {
+	resize: none;
+}
+
+section {
+	position: relative;
+}
+
+input,
+select,
+button {
+	outline: none;
+}
+input:focus,input:active,
+select:focus,select:active,
+button:focus,button:active {
+	outline: none;
+}
+input, button, label {
+-webkit-tap-highlight-color: transparent;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	background: linear-gradient(180deg, #F5F5FA 0%, #F2DAD5 44.15%, #A1ABD6 100%);
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: $content-size;
+	width: 100%;
+	@include laptop-max {
+		padding: 0 rem(20px);
+	}
+	@include tablet {
+		padding: 0 rem(16px);
+	}
+}
+.container-sm {
+	margin: 0 auto;
+	max-width: rem(937px);
+	width: 100%;
+	@include laptop-max {
+		padding: 0 rem(20px);
+	}
+	@include tablet {
+		padding: 0 rem(16px);
+	}
+}
+//Модули
+@import "modules/modules";
